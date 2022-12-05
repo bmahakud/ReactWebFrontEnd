@@ -1,0 +1,281 @@
+
+
+
+
+
+html{
+   
+     /*Core color codes------global color codes #224C98 */
+     --themeColor:#224C98;/* #224C98;/*#263c63;/* #1b3d7a;*/
+     --darkThemeTextColor: #4c5b75;/*#546a8f;/* #334769;/*#283957;*/
+     --deepDarkThemeTextColor: #29303d;/*#132545;/*#0e1c36;*/
+     --deepDarkThemeTextColor2:#374a6b;
+     --darkThemeTextColor3:black;
+     --lightThemeColor1: #edf3fc;
+     --lightThemeColor2: #f2f4f7;/*#edf1f7;*/
+     --lightThemeColor3: #dae0eb;
+     --lightThemeColor4: #e9edf5;
+     --greenColor1: #65c394;
+     --redColor1: #ff726f;
+
+     --tintGreyColor1: #7c8594;
+     --tintGreyColor2: #cbd0d6;
+     --tintGreyColor3: #dee0e3;
+     --tintGreyColor4: #f0f2f5;
+     --lightGreyTintTextColor: var(--tintGreyColor1);
+
+     /*Header Colors*/
+     --headerIconColor: #8496b5;/*#9fbaed;*/
+     --headerRightIconsColor: #9fbaed;/*#99add1;/* #9fbaed;*/
+     --headerIconColorOnhover: white;
+     --headerExpConBtnBkgColor: #1e458a;
+
+     /*Side Nav Bar Colors*/
+     --matchingTextColor1: #444655;/*use this color for all text in place of black*/
+     --sideNavBarBtnhoverColor: var(--lightThemeColor3);
+
+     --sideNavBarButtonTextColor: var(--deepDarkThemeTextColor);
+     --sideNavBarIconColor: var(--deepDarkThemeTextColor);
+
+     --sideNavBarBkgColor: #f0f3fa;/*var(--lightThemeColor3);/* #505050;*/
+
+     --sideToolBarBkgColor: var(--lightThemeColor4);
+     --sideToolBarBkgColor2: var(--sideNavBarBkgColor);
+
+     /* Dashboard side nav Bar colors */
+     --sideNavBarDashBoardBkgColor: var(--lightThemeColor4);
+     --sideNavBarDashBoardBtnColor: var(--darkThemeTextColor);
+     --sideNavBarDashBoardBtnBkgColor: #f0f3fa;/*#dae0eb;*/
+     --sideNavBarDashBoardOnClickBtnColor: var(--themeColor);
+     --sideNavBarDashBoardOnClickBtnBkgColor: white;
+
+
+
+     --userProfileInfoBoxBkgColor: white;   
+     --mainAppContainerBkgColor: #E8E8E8;
+     --ticketTextColor: #364a61;
+     --TextColorDarkBlue1: #364a61;
+     --clickBtnColorDash:read;/* #ff5349;*/
+     --clickBtnColorDashBackground: #ffd4d1;
+
+     /*height, width, size settings*/
+     --headerHeight: max( 2.5rem, calc( 0.065 * 100vh ) );
+     --headerFontSize: calc( 0.35 * var(--headerHeight) );
+     --headerLogoWidth: calc( 0.80 * var(--headerHeight));
+     --headerLogoWidth: calc( 0.80 * var(--headerHeight)); 
+     --headerTopMargin: 10px;
+     --headerLeftMargin: 0.5%;
+     --headerRightMargin: 0.5%;
+     --headerTopMargin: calc( 0.17 * var(--headerHeight) ); 
+
+
+
+     --sideNavBarWidth: calc( 4.0 * var(--headerHeight)) ;
+     --sideNavBarWidthOnContract: 0px;
+     --sideNavBarWidthMobile: 3.4rem;
+     --sideNavBarFontSize: calc( 0.30 * var(--headerHeight) );
+     --sideNavBarIconSize: calc( 0.35 * var(--headerHeight) );
+
+
+     --sideToolBarHeight: calc(0.77 * var(--headerHeight));
+     --topInfoBarInstructorWidth:calc( 7.0 * var(--headerHeight)); 
+     --sideBarHidePoint: 850px;
+
+      /*Top tool bar common style parameters inside the course */
+
+      --topRightButtonWidth_Course: 6vw;
+      --topRightButtonBkgColorInActive_Course: var(--tintGreyColor4);
+      --topRightButtonTextColorInActive_Course: var(--deepDarkThemeTextColor);
+      --topRightButtonBkgColorActive_Course:lightgrey;
+      --topRightButtonTextColorActive_Course:var(--themeColor);
+      --topRightButtonIconColorInActive:grey;
+      --topRightButtonIconColorActive:var(--themeColor);
+      --topRightButtonUnderlineColorActive: orange;
+      --topRightButtonUnderlineColorInActive:white;
+      --topRightButtonTextFontSize_Course: calc(  1vw );/*calc( 0.25 * var(--headerHeight) );*/
+      --topRightButtonIconFontSize_Course: calc( 1vw );/*calc( 0.30 * var(--headerHeight) );*/
+      --topInnerBarWidth:90%;
+
+      /*Top bar common style parameters in the dashboard/home*/
+      --toolButtonDashBkgColorInActive: var(--lightThemeColor2);
+      --toolButtonDashIconColorInActive: var(--darkThemeTextColor);
+      --toolButtonDashTextColorInActive: var(--darkThemeTextColor);
+      --toolButtonDashBoxShadowInActive:rgba(0, 0, 0, 0) 0px 0px 0px;
+
+      --toolButtonDashBkgColorActive: white;
+      --toolButtonDashIconColorActive: var(--themeColor);
+      --toolButtonDashTextColorActive: var(--themeColor);
+      --toolButtonDashBoxShadowActive:rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      --topRightButtonWidth_home: var(--topRightButtonWidth_Course);
+      --topRightButtonTextFontSize_home: var(--topRightButtonTextFontSize_Course);
+      --topRightButtonIconFontSize_home: var(--topRightButtonIconFontSize_Course);
+      --toolButtonDashUnderlineColorInActive: var(--lightThemeColor2);
+      --toolButtonDashUnderlineColorActive: orange;
+
+      --standardBoxShadow1: rgba(0, 0, 0, 0) 0px 0px 0px;
+      --standardBoxShadow2: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+
+
+
+/*
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+
+*/
+
+/*
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Quicksand&display=swap");
+*/
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+
+
+
+
+.edrapp{
+
+     width:100%;
+     background-color: var(--lightThemeColor2);
+     
+     -ms-overflow-style: none; 
+     scrollbar-width: none;
+}
+
+.edrapp::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+html{
+   --topRightButtonTextFontSize_Course:calc( 0.25 * var(--headerHeight) );
+   --topRightButtonIconFontSize_Course: calc( 0.25 * var(--headerHeight) );
+   --topRightButtonWidth_Course: 15vw;
+ }
+
+}
+
+
+/*
+@media screen  and (max-width: 650px)  {
+html{
+   --topRightButtonWidth_Course:50px;
+   --topRightButtonTextFontSize_Course:12px;
+   --topRightButtonIconFontSize_Course:18px;
+ }
+
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* default screen resolution designed for: 1920x1080*/
+/*1700px - 1950px: header:4.5rem*/
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+@media screen and (min-width: 1050px) and (max-width: 1360px) {
+
+html{
+--headerHeight: 3.5rem;
+
+ }
+}
+
+
+
+
+
+@media screen and (min-width: 1360px)  and (max-width:1700px){
+
+html{
+--headerHeight: 3.8rem;
+
+ }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1950px)  and (max-width:2300px){
+
+html{
+--headerHeight: 5.0rem;
+
+ }
+}
+
+
+
+@media screen and (min-width: 2300px)  and (max-width:2500px){
+
+html{
+--headerHeight: 5.7rem;
+
+ }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 2500px) {
+
+html{
+--headerHeight: 6.5rem;
+}
+
+}
+
+
+@media screen and (min-width: 3000px) {
+
+html{
+--headerHeight: 10.5rem;
+}
+
+}
+
+*/
+

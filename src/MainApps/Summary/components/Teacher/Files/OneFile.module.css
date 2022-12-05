@@ -1,0 +1,21 @@
+
+
+
+.oneFile{
+border-radius: 3px;
+width: 100%;
+aspect-ratio: 1.4/2;
+object-fit: contain;
+border-style: solid;
+border-width: 1px;
+border-color: lightgrey;
+}
+
+
+.docFileStyle{
+margin: 0 auto;
+width: 80px !important;
+height: 100px !important;
+
+}
+

@@ -1,0 +1,35 @@
+
+
+
+.eMailSecButton{
+
+
+width: 100%;
+height: calc( 0.7 * var(--headerHeight) );
+color: grey;
+background-color:white;
+border-style: none;
+border-color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: calc( 0.3 * var(--headerHeight) );
+
+}
+
+
+
+.eMailSecButton:hover{
+
+background: linear-gradient(to right, var(--sideNavBarBtnhoverColor) 96%, #f56042 0%) !important;;
+color: white;
+}
+
+
+.sectionIcon{
+position:relative;
+left: 0;
+padding-right: 20px;
+
+
+}

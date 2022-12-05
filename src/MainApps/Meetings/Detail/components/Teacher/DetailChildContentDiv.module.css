@@ -1,0 +1,25 @@
+
+.detailChildContentDiv{
+width:100%;
+height: calc( 100% - 30px );
+overflow-y: auto;
+overflow-x: hidden;
+border-style: none;
+background-color: white;
+margin-top: 20px;
+}
+
+
+.noCourseSelectedWarning{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+}
+
+.noCourseSelectedWarning i{
+font-style: normal;
+color: grey;
+
+}

@@ -1,0 +1,79 @@
+
+
+.inboxMailShortView{
+
+width: 100%;
+height: calc( 0.8 * var(--headerHeight) );
+border-bottom: 1px solid;
+border-color: lightgrey;
+display: flex;
+justify-content: space-between;
+}
+
+
+
+.leftSec{
+
+height: 100%;
+width:15%;
+background-color: white;
+color: #303030;
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+
+
+.flexDivLeft{
+display: flex;
+justify-content: space-around;
+}
+
+
+.middleSec{
+
+height: 100%;
+width:25%;
+background-color: white;
+margin-left: 50px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+white-space: nowrap; 
+text-overflow: ellipsis;
+overflow: hidden;
+
+}
+
+
+.rightSec{
+
+height: 100%;
+width:60%;
+background-color: white;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+
+.rightSecFlexDiv{
+display: flex;
+justify-content:space-around;
+
+}
+
+.emailDisplayContent{
+width: 60%;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden; 
+display: flex;
+color: grey;
+}
+
+
+
+
+

@@ -1,0 +1,27 @@
+
+
+.oneFriend{
+
+
+width: 150px;
+height: 190px;
+border-style: none;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+
+.friendImage{
+
+width:150px;
+height:150px; 
+margin: auto;
+border-radius: 50%;
+}
+
+.InfoBox{
+height: 40px;
+color: grey;
+border-style: none;
+}

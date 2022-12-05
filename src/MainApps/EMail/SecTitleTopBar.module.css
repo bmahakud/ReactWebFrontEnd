@@ -1,0 +1,49 @@
+
+
+
+.secTitleTopBar{
+width: 100%;
+height: calc( 1.2 * var(--headerHeight) );
+border-style: none;
+border-width: 1px;
+border-color: lightgrey;
+display: flex;
+align-items: center;
+margin-top: 30px;
+}
+
+.sectionTitle{
+
+position: relative;
+left: calc( 0.3 * var(--headerHeight) );
+font-size: calc( 0.4 * var(--headerHeight) );
+display: flex;
+}
+
+.searchDiv{
+
+border-style: solid;
+height: 40px;
+width: 500px;;
+border-style: none;
+background-color:var(--lightThemeColor1);
+margin-left: 30px;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+
+.searchIcon{
+margin-left: 20px;
+
+}
+
+
+
+
+
+
+
+

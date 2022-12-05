@@ -1,0 +1,43 @@
+
+
+
+.composeTopBar{
+position: relative;
+width: 100%;
+height: calc( 1.20 * var(--headerHeight) );
+background-color: white;
+display: flex;
+align-items: center;
+justify-content: space-around;
+border-color: white;
+flex-direction: column;
+}
+
+
+.composeTopBar:after {
+  content: "";
+  width:70%;
+  height:1px;/* slight higher to work around rounding errors(?) on some zoom levels in some browsers. */
+  background-color:grey;
+  position: relative;
+  right:0;
+  display: flex;
+}
+
+
+
+.composeButton{
+position: relative;
+height: calc( 0.60 * var(--headerHeight) );
+font-size: calc( 0.25 * var(--headerHeight) );
+color: white;
+background-color: #f56042;
+border-style: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 20px;
+}
+
+
+
+

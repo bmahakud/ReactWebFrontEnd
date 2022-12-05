@@ -1,0 +1,153 @@
+
+@import url("../../App.css");
+
+.headerLeft{
+
+    text-align: center;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    overflow: hidden;
+    border-style: none;
+    }
+
+.logo{
+    width: var(--headerLogoWidth);
+    height: var(--headerLogoWidth);
+    border-radius: 50%;
+    position: relative;
+    /*following lines are to align the image vertically in the middle*/
+    top: 50%;
+    -webkit-transform: perspective(1px) translateY(-50%);
+    -ms-transform: perspective(1px) translateY(-50%);
+    transform: perspective(1px) translateY(-50%);
+    }
+
+
+.logoText{
+color: white;
+font-size: calc( 0.35 * var(--headerHeight) );
+margin: auto;
+border-style: none;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: white;
+margin-left: 20px;
+}   
+
+.logoText span{
+margin-left: 10px;
+}
+
+
+@media screen and (max-width: 1000px) {
+.logoText span{
+display: none;
+}
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+.logo{
+
+display:none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+.courseNameButton{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter !important;
+    font-style: normal;
+    background-color: var(--themeColor);
+    /*border-style: solid;*/
+    overflow: hidden;
+    border-style: none;
+    line-height: var(--headerHeight);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 20px;
+    }
+
+.courseNameButton i{
+font-size: calc( 0.30 * var(--headerHeight) );
+font-style: normal;
+font-weight: lighter !important;
+font-family: Roboto;
+}
+
+
+
+
+.superScript{
+    position: relative;	
+    vertical-align: top; 
+    font-size: calc( 0.23 * var(--headerHeight) );
+    top: -0.8em;
+    font-family: Roboto; 
+    }
+
+
+
+.ExpConButton{
+height: calc( 0.7 * var(--headerHeight));
+border-style: none;
+background-color: var(--headerExpConBtnBkgColor);/* #2f4975;/*#294473;/*var(--headerExpConBtnBkgColor);*/ 
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 10px;
+padding-right: 10px;
+margin-left: 20px;
+}
+
+
+.ExpConIcon{
+
+font-size: calc( 0.35 * var(--headerHeight));
+color: white;
+
+}
+
+
+
+
+.clickDash:hover{
+cursor:pointer;
+}
+
+
+
+
+.backButton{
+background-color: var(--themeColor);
+border-style: none;
+color: white;
+cursor: pointer;
+padding-right: 20px;
+}
+
+
+.BackIcon{
+font-size:calc( 0.5 * var(--headerHeight) );
+}

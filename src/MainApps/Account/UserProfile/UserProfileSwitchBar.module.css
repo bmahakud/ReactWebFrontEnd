@@ -1,0 +1,9 @@
+
+
+.userProfileSwitchBar{
+height: calc( 0.6 * var(--headerHeight) );
+background-color: var(--headerRightIconsColor);
+display: flex;
+justify-content:flex-start;
+flex-direction: row;
+}

@@ -1,0 +1,45 @@
+
+
+.links{
+width: 85%;
+margin: auto;
+margin-top:50px;
+border-style: none;
+margin-bottom: 200px;
+height: 1000px;
+}
+
+.toolsDiv{
+width: 100%;
+border-style: none;
+height: 50px;
+margin-bottom: 100px;
+}
+
+
+.uploadButton{
+border-style: none;
+padding: 10px;
+background-color: #00aff0;
+color: white;
+font-weight: bold;
+cursor: pointer;
+border-radius: 5px;
+font-size: 18px;
+}
+
+.linkBoxContainer{
+font-size: 18px;
+border-style: solid;
+color: blue;
+border-style: none;
+background-color: white;
+padding: 10px;
+cursor: pointer;
+}
+
+.linkBoxContainer:hover{
+
+text-decoration: underline;
+}
+

@@ -1,0 +1,16 @@
+
+
+
+.mainAppContainer{
+position: relative;
+background-color:  #E8E8E8;
+width: calc( 100% - var(--sideNavBarWidth) );
+top:  var(--headerHeight);
+left: var(--sideNavBarWidth);
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: calc(0.5 * var(--headerHeight)) calc(0.9 * var(--headerHeight)) 1fr;
+row-gap: 15px;
+column-gap: 15px;
+transition: 0.5s;
+}

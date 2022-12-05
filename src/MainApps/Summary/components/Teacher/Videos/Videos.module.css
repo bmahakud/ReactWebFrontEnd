@@ -1,0 +1,143 @@
+
+.videos{
+width: 85%;
+margin: auto;
+margin-top:50px;
+border-style: none;
+margin-bottom: 200px;
+}
+
+
+.toolsDiv{
+width: 100%;
+border-style: none;
+height: 50px;
+margin-bottom: 100px;
+}
+
+
+.videoBoxContainer{
+width: 100%;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) );
+grid-column-gap: 40px;
+grid-row-gap: 70px;
+}
+
+.uploadButton{
+border-style: none;
+padding: 10px;
+background-color: #00aff0;
+color: white;
+font-weight: bold;
+cursor: pointer;
+border-radius: 5px;
+font-size: 18px;
+}
+
+
+
+.addVideoOptions{
+border-style: none;
+display: flex;
+flex-direction: column;
+position: absolute;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.videoOptionButton{
+padding: 10px;
+display: flex;
+border-style: none;
+color: #36454F;
+background-color: white;
+font-size: 20px;
+cursor: pointer;
+}
+
+.videoOptionButton:hover{
+
+background-color: lightgrey;
+}
+
+.youtubeIcon{
+color: red;
+margin-right: 10px;
+}
+
+
+.uploadIcon{
+color: #00aff0;
+margin-right: 10px;
+}
+
+.linkFile{
+margin-right: 10px;
+}
+
+
+
+.pageNos{
+height: 30px;
+border-style: none;
+margin-top:30px;
+display: flex;
+align-items: center;
+}
+
+
+.leftNavButton{
+border-style: solid;
+border-width: 1px;
+border-color: lightgrey;
+height: 25px;
+cursor: pointer;
+min-width: 25px;
+color: #686868;
+}
+
+.rightNavButton{
+border-style: solid;
+border-width: 1px;
+border-color: lightgrey;
+height: 25px;	
+cursor: pointer;
+min-width: 25px;
+color: #686868;
+}
+
+.middleNavButton{
+border-style: solid;
+border-width: 1px;
+border-color: lightgrey;	
+height: 25px;
+cursor: pointer;
+min-width: 25px;
+color: #686868;
+}
+
+
+.leftNavButton:hover{
+background-color:var(--themeColor);
+color: white;
+}
+
+
+.rightNavButton:hover{
+background-color:var(--themeColor);
+color: white;
+}
+
+.middleNavButton:hover{
+background-color:var(--themeColor);
+color: white;
+}
+
+
+
+
+
+
+
+
+

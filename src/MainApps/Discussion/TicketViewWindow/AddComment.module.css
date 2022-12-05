@@ -1,0 +1,98 @@
+.ticketComments{
+width: 100%;
+background-color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: white;
+border-top: 1px solid;
+border-color: lightgrey;
+padding-top:20px;
+}
+
+
+.commentTitle{
+width: 100%;
+background-color: white;
+color: var(--ticketTextColor);
+display: flex;
+}
+.commenterButton{
+border-style: none;
+background-color: white;
+color: var(--ticketTextColor);
+font-size: 1rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+cursor: pointer;
+color: green;
+padding: 7px;
+}
+
+.commenterButton:hover{
+}
+
+
+
+.hrLine{
+width: 90%;
+
+}
+
+.commenterButton{
+border-style: none;
+background-color: white;
+color: white;
+font-size: 1rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+cursor: pointer;
+background-color: var(--ticketTextColor);
+border-radius: 3px;
+}
+
+
+.descriptionTextBox{
+width:90%;
+padding-top: 5px;
+color: var(--ticketTextColor);
+}
+
+
+.addCommentForm{
+position: relative;
+width: 100%;
+
+}
+
+.textarea_Div{
+position: relative;
+width: 100%;
+
+}
+
+
+.inputText_field{
+position: relative;
+width: 100%;
+height: 100px;
+max-width: 100%;
+}
+
+.submit_button{
+color: white;
+border-style: none;
+background-color: var(--ticketTextColor);
+border-radius: 3px;
+cursor: pointer;
+padding: 7px;
+}
+
+
+
+
+
+
+

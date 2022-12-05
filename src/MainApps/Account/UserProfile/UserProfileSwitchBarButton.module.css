@@ -1,0 +1,25 @@
+
+
+
+.userProfileSwitchBarButton{
+
+height: 100%;
+width: 100px;
+background-color: #c0d0ed;
+color: var(--themeColor);
+border-style: none;
+border-right: solid;
+cursor: pointer;
+border-color: #9abaf5;
+border-width: 2px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: calc( 0.29 * var(--headerHeight) );
+}
+
+
+
+
+
+
