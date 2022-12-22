@@ -13,8 +13,7 @@ import {CgNotes} from 'react-icons/cg';
 import CreateClassForm from './Forms/CreateCourseForm';
 
 import {GrTask} from 'react-icons/gr';
-import buttonStyle1 from '../../../../CommonApps/buttonStyle1.module.css';
-
+import buttonStyle2 from './../../../../CommonApps/buttonStyle2.module.css';
 
 
 
@@ -388,7 +387,9 @@ return (
 	        
 	        <div className={classes.TitleBox2}>
 
-	          <button type="button" onClick={showCreateClassFormHandler} className={buttonStyle1.buttonStyle1}> +Create a class </button>
+	          <button type="button" onClick={showCreateClassFormHandler} className={buttonStyle2.buttonStyle2}> 
+	              <b> +Create a class </b>
+	          </button>
 	        </div>
 		
          </div>

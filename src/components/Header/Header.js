@@ -10,7 +10,9 @@ function Header(props){
 return (
 
    <>
+   {/*
    <div className={classes.styleDivHeader}> </div>	
+   */}
    <header className={classes.header}>
 
      <HeaderLeft 

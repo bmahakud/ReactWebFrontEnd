@@ -4,9 +4,12 @@ width:100%;
 height: calc( 100% - 30px );
 overflow-y: auto;
 overflow-x: hidden;
-border-style: none;
+border-style: solid;
+border-width: 1px;
+border-color: lightgrey;
 background-color: white;
 margin-top: 20px;
+border-radius: var(--cardBorderRadius);
 }
 
 

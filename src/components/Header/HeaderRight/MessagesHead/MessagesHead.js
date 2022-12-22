@@ -4,20 +4,20 @@ import { FaComments } from "react-icons/fa";
 
 import MessagesContainer from './MessagesContainer';
 
-
+import {BsChatText} from 'react-icons/bs';
 
 const MessagesHead =(props)=>{
 
 
-    const [styles, setStyles] = useState({color:'var(--headerRightIconsColor)',backgroundColor:'var(--themeColor)'});
+    const [styles, setStyles] = useState({color:'var(--headerRightIconsColor)',backgroundColor:'var(--headerBkgColor)'});
 
     const onMouseEnterHandler=()=>{
-      setStyles({color:'var(--themeColor)',backgroundColor:'var(--headerRightIconsColor)'});
+      setStyles({color:'var(--deepDarkThemeTextColor)',backgroundColor:'lightgrey'});
     }
 
 
     const onMouseLeaveHandler=()=>{
-      setStyles({color:'var(--headerRightIconsColor)',backgroundColor:'var(--themeColor)'});
+      setStyles({color:'var(--headerRightIconsColor)',backgroundColor:'var(--headerBkgColor)'});
     }
 
 
@@ -54,7 +54,7 @@ return (
 	style={styles}
 	onClick={showMessagesHandler}
 	>
-        <FaComments className={classes.UsersIcon} style={styles}/>
+        <BsChatText className={classes.UsersIcon} style={styles}/>
         {/*
 	   <i className={classes.alertMessage}><b>9</b></i>
 	*/}

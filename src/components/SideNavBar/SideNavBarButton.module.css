@@ -4,6 +4,8 @@
 
  .sideNavBarButton {
       padding: calc( 0.16 * var(--headerHeight) );
+      padding-top: calc( 0.20 * var(--headerHeight) );
+      padding-bottom: calc( 0.20 * var(--headerHeight) );
       text-decoration: none;
       font-size: var(--sideNavBarFontSize);;
       color: var(--sideNavBarIconColor);
@@ -14,7 +16,6 @@
       display: block;
       transition: 0.3s;
       font-weight: 100;
-      margin:5px;
       width: var(--sideNavBarWidth);
       text-align: left;
       cursor: pointer;

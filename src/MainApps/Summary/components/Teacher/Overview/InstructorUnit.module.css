@@ -10,14 +10,15 @@ border-style: none;
 
 
 .instructorTitle{
-color: grey;
-font-weight: bold;
+color: var(--deepDarkThemeTextColor);
 font-style: normal;
+font-weight: bold;
 }
 
 .instructorName{
 font-style: normal;
-
+color: var(--deepDarkThemeTextColor);
+color: var(--greyTextColor);
 }
 
 
@@ -26,7 +27,6 @@ font-style: normal;
 color: grey;
 font-size: 18px;
 display: flex;
-margin-top: 15px;
 }
 
 

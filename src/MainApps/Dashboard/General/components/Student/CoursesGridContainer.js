@@ -63,7 +63,9 @@ return (
 
 <div className={classes.switchBar}>
 
-   <button className={classes.createCourseButton} type="button" onClick={()=>setShowCreateCourseForm(true)}> +Add a course</button>
+   <button className={classes.createCourseButton} type="button" onClick={()=>setShowCreateCourseForm(true)}> 
+	<b>+Add a course</b>
+   </button>
 
 </div>	
 

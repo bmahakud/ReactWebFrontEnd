@@ -32,14 +32,27 @@ margin-left: 10px;
 
 .editButtonAbout{
 left: calc( 0.3 * var(--headerHeight) );
-background-color: orange;
-border-style: none;
-border-radius: 3px;
+background-color: white;
+border-style: solid;
+border-radius: 5px;
+border-width: 1px;
 padding:5px;
 padding-left: 10px;
 padding-right: 10px;
 cursor: pointer;
-color: white;
+color: var(--themeColor);
+border-color: var(--cardBorderColor);
 }
+
+
+.editButtonAbout:hover{
+background-color: var(--themeColor);
+color: white;
+
+}
+
+
+
+
 
 

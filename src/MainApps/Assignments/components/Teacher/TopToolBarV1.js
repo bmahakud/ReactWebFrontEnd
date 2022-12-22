@@ -15,7 +15,7 @@ import {FaHourglassHalf} from 'react-icons/fa';
 import {FaCheckCircle} from 'react-icons/fa';
 import {FaCalendarAlt} from 'react-icons/fa';
 import {FaPenAlt} from 'react-icons/fa';
-
+import buttonStyle2 from './../../../../CommonApps/buttonStyle2.module.css';
 
 
 
@@ -366,7 +366,7 @@ return (
 	        
 	        <div className={classes.TitleBox2}> 
 	        
-                   <button type="button" className={classes.createbtn}><FaPenAlt/> Create an assignment </button>
+                   <button type="button" className={buttonStyle2.buttonStyle2}> +Create an assignment </button>
 
 	        </div>
 		

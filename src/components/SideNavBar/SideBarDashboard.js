@@ -158,7 +158,7 @@ const SideBarDashboard =(props)=>{
             borderStyle:"none",
             borderColor:"var(--themeColor)",
             borderWidth:"1px",
-	    borderRadius:"calc( 0.2 * var(--headerHeight) )",
+	    borderRadius:"var(--cardBorderRadius)",
 	    fontWeight:"bold",
 	    iconObj:RiDashboardFill
             };
@@ -327,7 +327,7 @@ return (
    <SideNavBarButtonQMeeting onPress={createMeetingHandler}
          icon={BsFillCameraVideoFill}
          name="+Quick meeting"
-         buttonColor={{background:'#00aff0',borderStyle:'none',color:'white' }}
+         buttonColor={{background:'white',borderStyle:'solid',color:'var(--themeColor)',borderColor:'lightgrey' }}
          />
 
 

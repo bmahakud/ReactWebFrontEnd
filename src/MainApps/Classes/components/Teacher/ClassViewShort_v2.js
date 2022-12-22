@@ -298,12 +298,12 @@ return (
 		  */}
 	        </div>
 	        <div className={classes.topicsTitle}> 
-	         <b>1#</b> Newtons Laws of Motion, paralellogram law, action and reaction
+	         <b className={classes.classNum}>#12</b> Newtons Laws of Motion, paralellogram law, action and reaction
 	        </div>
 		
             </div>
 	    <div className={classes.toprightBoxes}>
-	       <div className={classes.classStatus}>Scheduled </div>
+	       <div className={classes.classStatus}><b>Scheduled </b></div>
 	       <button type="button" className={classes.dotsButton}> <BsThreeDotsVertical/> </button>
 	    </div>
 	</div>
@@ -317,7 +317,7 @@ return (
 	       <div className={classes.authorDiv}> by Dr. Bibhuprasad  Mahakud</div>
 	       <div className={classes.addressDiv}>
 	            <span>Time & Address : </span>
-	            <span className={classes.classTime}>{" "+classTime+" "}</span>
+	            <span className={classes.classTime}> <b>{" "+classTime+" "}</b></span>
 	            {props.Class.roomNo ===""? "N/A ": props.Class.roomNo}
 	       </div> 
 	   </div>

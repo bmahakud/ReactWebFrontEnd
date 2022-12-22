@@ -4,8 +4,13 @@
 width: 85%;
 margin: auto;
 margin-top:20px;
-border-style: none;
+border-style: solid;
 margin-bottom: 200px;
+background-color: white;
+padding: 2.5%;
+border-radius: var(--cardBorderRadius);
+border-width: 1px;
+border-color: var(--cardBorderColor);
 }
 
 .instructorGrid{
@@ -28,8 +33,6 @@ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
 border-style: none;
 grid-column-gap: 20px;
 grid-row-gap: 30px;
-
-
 
 }
 

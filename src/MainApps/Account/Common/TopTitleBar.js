@@ -33,9 +33,9 @@ return (
 <div className={classes.topTitleBar}>
 
        <i className={classes.topTitleBar__Text}>
-        {/*
-        <button className={classes.backButton} onClick={goBackHandler}> <BsArrowLeft className={classes.backIcon}/> </button>
-         */}
+          {/*
+          <button className={classes.backButton} onClick={goBackHandler}> <BsArrowLeft className={classes.backIcon}/> </button>
+          */}
 	<b>{props.title} </b>
 
 	</i>

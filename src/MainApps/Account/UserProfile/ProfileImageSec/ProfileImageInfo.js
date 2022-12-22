@@ -16,7 +16,7 @@ return (
 
 
                  <div className={classes.nameDiv}>
-                                           <i className={classes.name_i}><h2>{props.userData.usertitle}  {props.userData.firstname}   {props.userData.lastname} </h2> </i>
+                        <i className={classes.name_i}><h3>{props.userData.usertitle}  {props.userData.firstname}   {props.userData.lastname} </h3> </i>
                  </div>
 	  
 	         <div className={classes.profileImageInfo_position}> 

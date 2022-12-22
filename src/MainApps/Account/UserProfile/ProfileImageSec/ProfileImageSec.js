@@ -27,14 +27,15 @@ return (
 
 
             <ProfileImage userData={props.userData} rerender={props.rerender}/>
+	    
             <ProfileImageInfo userData={props.userData}/>
-
+             
         </div>
         
      </div>
 
 
-
+     {/*
      <div className={classes.unitColumn}>
 
        <div className={classes.innerColumn}>
@@ -55,7 +56,7 @@ return (
          </div>	
 
      </div>
-
+     */}
 
 
 

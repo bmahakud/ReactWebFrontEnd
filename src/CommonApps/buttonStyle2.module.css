@@ -1,33 +1,7 @@
 
-
-.meetings{
-
-width: 100%;
-margin: auto;
-/*margin-top:200px;
-margin-left:200px;
-*/
-}
-
-
-
-
-.switchBar{
+.buttonStyle2{
 height: calc( 0.7 * var(--headerHeight) );
-width:90%;
-margin: auto;
-margin-top: calc( 0.4 * var(--headerHeight) );
-border-color: lightgrey;
-border-style: none;
-
-
-}
-
-
-
-.createMeetingButton{
-height: 100%;
-border-style: solid;;
+border-style: solid;
 font-size: calc( 0.3 * var(--headerHeight) );
 cursor: pointer;
 border-width: calc( 0.04 * var(--headerHeight) );
@@ -35,9 +9,9 @@ border-color: var(--cardBorderColor);
 background-color: white;
 color: var(--themeColor);
 font-family: Roboto;
-border-radius: 5px;
+border-radius: calc( 0.6 * var(--cardBorderRadius) );
 padding-left: calc( 0.5 * var(--headerHeight) );
 padding-right: calc( 0.5 * var(--headerHeight) );
-
-
+border-width: 1px;
 }
+

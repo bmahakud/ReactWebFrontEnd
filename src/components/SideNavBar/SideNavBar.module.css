@@ -3,11 +3,11 @@
 
 .SideMainContainer{
 
-      height: calc( 100vh - var(--headerHeight) - var(--sideToolBarHeight));
+      height: calc( 100vh - var(--headerHeight));
       width: var(--sideNavBarWidth);
       position: fixed;
       z-index: 1;
-      top:calc( var(--headerHeight) + var(--sideToolBarHeight) + var(--headerTopMargin) );
+      top:calc( var(--headerHeight) + var(--sideToolBarHeight));/* + var(--headerTopMargin) );*/
       left: var(--headerLeftMargin);
       background-color:var(--sideNavBarBkgColor);
       overflow-x: hidden;

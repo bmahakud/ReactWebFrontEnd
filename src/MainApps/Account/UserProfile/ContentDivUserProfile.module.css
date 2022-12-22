@@ -1,9 +1,10 @@
 
 .contentDivUserProfile{
-background-color: #E8E8E8;
 display: flex;
 justify-content: space-between;
 border-style: none;
+border-color: orange;
+padding-bottom: 20px;
 /*
 display: grid;
 grid-template-columns: 1fr 2.3fr;
@@ -12,7 +13,6 @@ grid-gap: 10px;
 padding-bottom: 50px;
 padding-right:20px;
 */
-
 
 
 

@@ -43,7 +43,9 @@ return (
 
 <div className={classes.switchBar}>
 
-   <button className={classes.createMeetingButton} type="button" onClick={()=>setShowCreateMeetingForm(true)}> +Create a meeting</button>
+   <button className={classes.createMeetingButton} type="button" onClick={()=>setShowCreateMeetingForm(true)}> 
+	<b>+Create a meeting</b>
+   </button>
 
 </div>
 

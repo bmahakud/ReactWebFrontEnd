@@ -8,6 +8,8 @@ text-align: center;
 color: black;
 display: flex;
 flex-direction: column;
+border-style: none;
+border-radius: var(--cardBorderRadius);
 }
 
 .nameDiv{
@@ -18,7 +20,7 @@ background-color: white;
 .name_i{
 
 font-style: normal;
-color:var(--sideNavBarBkgColor)
+color:var(--greyTextColor)
 }
 
 .profileImageInfo_position{

@@ -3,10 +3,15 @@
 .links{
 width: 85%;
 margin: auto;
-margin-top:50px;
-border-style: none;
+margin-top: 20px;
+border-style: solid;
 margin-bottom: 200px;
-height: 1000px;
+min-height: 1000px;
+border-radius: var(--cardBorderRadius);
+border-width: 1px;
+border-color: var(--cardBorderColor);
+padding: 2.5%;
+background-color: white;
 }
 
 .toolsDiv{

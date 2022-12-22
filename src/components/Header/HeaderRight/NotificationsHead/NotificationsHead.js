@@ -3,18 +3,20 @@ import classes from './NotificationsHead.module.css';
 import { FaBell } from "react-icons/fa";
 import NotificationContainer from './NotificationContainer';
 
+import {BsBell} from 'react-icons/bs';
+
 const NotificationsHead =(props)=>{
 
 
-     const [styles, setStyles] = useState({color:'var(--headerRightIconsColor)',backgroundColor:'var(--themeColor)'});
+     const [styles, setStyles] = useState({color:'var(--headerRightIconsColor)',backgroundColor:'var(--headerBkgColor)'});
 
      const onMouseEnterHandler=()=>{
-        setStyles({color:'var(--themeColor)',backgroundColor:'var(--headerRightIconsColor)'});
+        setStyles({color:'var(--deepDarkThemeTextColor)',backgroundColor:'lightgrey'});
      }
 
 
      const onMouseLeaveHandler=()=>{
-         setStyles({color:'var(--headerRightIconsColor)',backgroundColor:'var(--themeColor)'});
+         setStyles({color:'var(--headerRightIconsColor)',backgroundColor:'var(--headerBkgColor)'});
      }
 
      const [dropDown, setDropDown] = useState(false);
@@ -39,7 +41,7 @@ return (
 	      style={styles}
 	      onClick={showNotificationHandler}
 	      >
-          <FaBell className={classes.UsersIcon} style={styles}/>
+          <BsBell className={classes.UsersIcon} style={styles}/>
           {/*	
               <i className={classes.alertMessage}><b>10</b></i>
          */}

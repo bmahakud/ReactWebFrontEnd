@@ -56,9 +56,13 @@ return (
 
     <div className={classes.switchBar}>
 
-      <button className={classes.createCourseButton} type="button" onClick={()=>setShowCreateCourseForm(true)}> +Create a course</button>
+      <button className={classes.createCourseButton} type="button" onClick={()=>setShowCreateCourseForm(true)}> 
+	<b> +Create a course</b>
+      </button>
 
+      {/*	
       <span className={classes.instructions}> Dashboard provides summary of all your courses at one place. Go inside the  courses to know more details about a single course </span>	
+     */}
     </div>	
 
     {showCreateCourseForm && <CreateCourseForm onPress = {closecreateCourseForm} />}

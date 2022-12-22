@@ -7,11 +7,16 @@ display: flex;
 align-items: center;
 flex-direction: column;
 align-items: flex-start;
-margin-bottom: 10px;
+margin-bottom: 200px;
 padding-top:20px;
 border-style: none;
 margin:auto;
-margin-top: 50px;
+margin-top: 20px;
+padding: 2.5%;
+border-style: solid;
+border-width: 1px;
+border-color: var(--cardBorderColor);
+border-radius: var(--cardBorderRadius);
 }
 
 .courseSyllabus i{

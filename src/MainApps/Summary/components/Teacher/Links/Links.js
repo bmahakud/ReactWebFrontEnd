@@ -5,7 +5,7 @@ import CourseAddLinkForm from './Forms/CourseAddLinkForm';
 
 import {getlinksbyCourseId} from '../../../../../CommonApps/AllAPICalls';
 
-
+import buttonStyle2 from './../../../../../CommonApps/buttonStyle2.module.css';
 
 
 const Links=(props)=>{
@@ -65,7 +65,7 @@ return (
 
 
 
-         <button type="button" className={classes.uploadButton} onClick={addLinkHandler}> + Add a link </button>
+         <button type="button" className={buttonStyle2.buttonStyle2} onClick={addLinkHandler}> + Add a link </button>
 
     </div>
 

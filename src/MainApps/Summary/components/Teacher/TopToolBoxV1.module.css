@@ -9,12 +9,13 @@ position: relative;
 .topToolBoxV1{
 cursor: pointer;
 border-style: solid;
-border-radius:5px;
+border-radius: var(--cardBorderRadius);
 width:var(--topRightButtonWidth_Course);
 background-color: var(--topRightButtonBkgColorInActive_Course);
 padding: 15px;
-border-color: var(--lightThemeColor3);
+border-color: var(--cardBorderColor);
 border-style: solid;
+border-width: 1px;
 }
 
 
@@ -22,6 +23,9 @@ border-style: solid;
 height:3px;
 background-color: var(--themeColor);
 margin-top:10px;
+border-radius: 5px;
+width: 90%;
+margin-left: 6px;
 }
 
 

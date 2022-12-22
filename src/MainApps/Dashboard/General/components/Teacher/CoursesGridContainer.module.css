@@ -83,13 +83,14 @@ border-style: solid;;
 font-size: calc( 0.3 * var(--headerHeight) );
 cursor: pointer;
 border-width: calc( 0.04 * var(--headerHeight) );
-border-color: #00aff0;
+border-color: var(--cardBorderColor);
 background-color: white;
-color: #00aff0;
+color: var(--themeColor);
 font-family: Roboto;
-border-radius: 5px;
+border-radius: calc( 0.6 * var(--cardBorderRadius) );
 padding-left: calc( 0.5 * var(--headerHeight) );
 padding-right: calc( 0.5 * var(--headerHeight) );
+border-width: 1px;
 }
 
 
@@ -106,6 +107,7 @@ border-style: none;
 .instructions{
 margin-left: 10px;
 color: var(--tintGreyColor1);
+font-size: calc( 0.3 * var(--headerHeight) )
 }
 
 

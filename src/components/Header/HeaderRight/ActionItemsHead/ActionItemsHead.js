@@ -4,6 +4,8 @@ import { FaUsers } from "react-icons/fa";
 //import GeneralDropDown from './GeneralDropDown';
 //import UserHeadDropDown from '../UserHead/UserHeadDropDown';
 
+import {BsPeople} from 'react-icons/bs';
+
 import CourseEnrollmentRequest from './CourseEnrollmentRequest';
 
 const ActionItemHead =(props)=>{
@@ -13,19 +15,19 @@ const ActionItemHead =(props)=>{
 
     const [dropDown, setDropDown] = useState(false);
 
-    const [styles, setStyles] = useState({color:'var(--headerRightIconsColor)',backgroundColor:'var(--themeColor)'});
+    const [styles, setStyles] = useState({color:'var(--headerRightIconsColor)',backgroundColor:'var(--headerBkgColor)'});
 
 
     //const [showActionItems, setShowActionItems] = useState(true);	
  
 
     const onMouseEnterHandler=()=>{
-        setStyles({color:'var(--themeColor)',backgroundColor:'var(--headerRightIconsColor)'});
+        setStyles({color:'var(--headerRightIconsColor)',backgroundColor:'lightgrey'});
     }
 
 
     const onMouseLeaveHandler=()=>{
-        setStyles({color:'var(--headerRightIconsColor)',backgroundColor:'var(--themeColor)'});
+        setStyles({color:'var(--headerRightIconsColor)',backgroundColor:'var(--headerBkgColor)'});
     }
 
    
@@ -65,7 +67,7 @@ return (
      
 
 
-         <FaUsers className={classes.UsersIcon} style={styles}/>
+         <BsPeople className={classes.UsersIcon} style={styles}/>
 	 { notificationNum !==0 &&
             <i className={classes.alertMessage}><b>{notificationNum}</b></i> 
          }

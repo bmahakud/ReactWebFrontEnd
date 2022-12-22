@@ -18,10 +18,10 @@ const [friends, setFriends] = useState(false);
 
 
 const [style,setStyle] = useState({ 
-	     basic:  {color:"white",backgroundColor:"#7097e0"},
-             advanced:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
-             grades:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
-	     friends:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
+	     basic:  {color:"white",backgroundColor:"var(--themeColor)"},
+             advanced:  {color:"var(--themeColor)",backgroundColor:"white"},
+             grades:  {color:"var(--themeColor)",backgroundColor:"white"},
+	     friends:  {color:"var(--themeColor)",backgroundColor:"white"},
              }
     );
 
@@ -36,10 +36,10 @@ const setAdvanceToTrue=()=>{
   setFriends(false);	
   setAdvanced(true);
 
-  setStyle({    basic:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
-                advanced:  {color:"white",backgroundColor:"#7097e0"},
-                grades:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
-	        friends:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
+  setStyle({    basic:  {color:"var(--themeColor)",backgroundColor:"white"},
+                advanced:  {color:"white",backgroundColor:"var(--themeColor)"},
+                grades:  {color:"var(--themeColor)",backgroundColor:"white"},
+	        friends:  {color:"var(--themeColor)",backgroundColor:"white"},
              });
 
   }
@@ -51,10 +51,10 @@ const setGradesToTrue=()=>{
   setAdvanced(false);
   setFriends(false);	
   setGrades(true);
-  setStyle({    basic:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
-                grades:  {color:"white",backgroundColor:"#7097e0"},
-                advanced:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
-	        friends:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
+  setStyle({    basic:  {color:"var(--themeColor)",backgroundColor:"white"},
+                grades:  {color:"white",backgroundColor:"var(--themeColor)"},
+                advanced:  {color:"var(--themeColor)",backgroundColor:"white"},
+	        friends:  {color:"var(--themeColor)",backgroundColor:"white"},
              });
 
 
@@ -67,10 +67,10 @@ const setBasicToTrue=()=>{
   setGrades(false);
   setBasic(true);
   setFriends(false);	
-  setStyle({    advanced:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
-                basic:  {color:"white",backgroundColor:"#7097e0"},
-                grades:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
-	        friends:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
+  setStyle({    advanced:  {color:"var(--themeColor)",backgroundColor:"white"},
+                basic:  {color:"white",backgroundColor:"var(--themeColor)"},
+                grades:  {color:"var(--themeColor)",backgroundColor:"white"},
+	        friends:  {color:"var(--themeColor)",backgroundColor:"white"},
              });
 
 
@@ -87,10 +87,10 @@ const setFriendsToTrue=()=>{
   setGrades(false);
   setBasic(false);
   setFriends(true);
-  setStyle({    advanced:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
-                basic:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
-                grades:  {color:"var(--themeColor)",backgroundColor:"#c0d0ed"},
-                friends:  {color:"white",backgroundColor:"#7097e0"},
+  setStyle({    advanced:  {color:"var(--themeColor)",backgroundColor:"white"},
+                basic:  {color:"var(--themeColor)",backgroundColor:"white"},
+                grades:  {color:"var(--themeColor)",backgroundColor:"white"},
+                friends:  {color:"white",backgroundColor:"var(--themeColor)"},
              });
 
 
@@ -117,20 +117,20 @@ return (
 
     	
     <UserProfileSwitchBar onPressAdvanced = {setAdvanceToTrue} 
-	                  onPressGrades = {setGradesToTrue} 
-	                  onPressBasic = {setBasicToTrue}
-	                  onPressFriends = {setFriendsToTrue}
-	                  style={style}
+	                  onPressGrades   = {setGradesToTrue} 
+	                  onPressBasic    = {setBasicToTrue}
+	                  onPressFriends  = {setFriendsToTrue}
+	                  style = {style}
                           />
 
-   { basic  && <UserProfileContentBasic  data={props.data} userDataUpdated={props.userDataUpdated} />}
+   { basic  && <UserProfileContentBasic  data={props.data} userDataUpdated={props.userDataUpdated} /> }
 
    { advanced  && <UserProfileContentAdvanced  data={props.data} userDataUpdated={props.userDataUpdated} /> }
  
    { grades && <UserProfileContentGrades/> }	
    
     
-   {friends && <UserProfileContentFriends userData={props.data}/>}
+   { friends && <UserProfileContentFriends userData={props.data}/>}
 
 
 </div>

@@ -1,5 +1,5 @@
 .messagesItemsParentDiv{
- background-color: var(--themeColor);
+ background-color: var(--headerBkgColor);
  border-style: none;
  z-index: 9999;
  margin-left: 20px;
@@ -9,7 +9,7 @@
 
 .UsersIcon{
 
-    font-size: calc( 0.35 * var(--headerHeight) );
+    font-size: calc( 0.40 * var(--headerHeight) );
     color: red;
     color: var(--headerRightIconsColor);
     vertical-align:middle;
@@ -28,7 +28,7 @@
     position: relative;
     height: calc( 0.7 * var(--headerHeight) );
     width: calc( 0.7 * var(--headerHeight) );
-    border-style: solid;
+    border-style: none;
     border-width:calc( 0.06 * var(--headerHeight) );
     border-color: var(--headerRightIconsColor);
     border-radius: 50%;

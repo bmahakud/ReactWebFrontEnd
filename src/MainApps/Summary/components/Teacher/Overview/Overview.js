@@ -79,13 +79,13 @@ return (
      }
 
 
-
+     
      <div className={classes.editDiv}>	
             <button type="button" className={classes.editBasicInfoButton} onClick={showCourseEditFormHandler}>
 	      Edit
 	    </button>
      </div>
-
+     
 
      <div className={classes.generalInfoGrid}>
 

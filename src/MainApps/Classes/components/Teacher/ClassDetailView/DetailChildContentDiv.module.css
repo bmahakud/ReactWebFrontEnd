@@ -1,8 +1,12 @@
 
 .detailChildContentDiv{
 width:90%;
-border-style: none;
+border-style: solid;
 margin: auto;
+border-color: var(--cardBorderColor);
+border-width: 1px;
+border-radius: var(--cardBorderRadius);
+background-color: white;
 }
 
 

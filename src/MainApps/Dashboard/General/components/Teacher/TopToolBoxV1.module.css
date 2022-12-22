@@ -15,7 +15,7 @@ width: 20%;
 .topToolBoxV1{
 cursor: pointer;
 border-style: solid;
-border-radius: calc( 0.3 * var(--headerHeight) );
+border-radius: var(--cardBorderRadius);
 border-color: var(--lightThemeColor3);
 width:var(--topRightButtonWidth_home);
 width:90%;
@@ -27,15 +27,16 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: calc( 0.35 * var(--headerHeight) );
+border-width: 1px;
 }
 
 .highLightDiv{
 height:3px;
 background-color: var(--themeColor);
 margin-top: calc( 0.18 * var(--headerHeight) );
-width: 90%;
+width: 80%;
 border-radius: 3px;
-margin-left: 10%;
+margin-left: 16%;
 }
 
 

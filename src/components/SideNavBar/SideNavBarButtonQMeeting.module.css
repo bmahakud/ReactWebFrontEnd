@@ -42,7 +42,7 @@ z-index:999999999;
       position:relative;
       align-items: center;
       font-family: Roboto;
-      border-style: none;
+      border-style: solid;
       background: red;
       /*top: 150px;*/
       width:90%;

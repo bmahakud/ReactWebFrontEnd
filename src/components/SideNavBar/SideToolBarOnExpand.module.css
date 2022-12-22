@@ -2,7 +2,7 @@
 
     position: relative;
     width: var(--sideNavBarWidth);
-    top: calc( var(--headerHeight) + var(--headerTopMargin) ) ;
+    top: var(--headerHeight);/*calc( var(--headerHeight) + var(--headerTopMargin) ) ;*/
     transition: 0.5s;
     z-index: 1;
     left: 0.5%;

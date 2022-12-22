@@ -2,7 +2,7 @@
 .contentDiv{
 position: relative;
 background-color: var(--mainAppContainerBkgColor);
-background-color: white;
+background-color: var(--bodyBkgColor);
 border-style:none;
 border-width: 1px;
 border-color: red;

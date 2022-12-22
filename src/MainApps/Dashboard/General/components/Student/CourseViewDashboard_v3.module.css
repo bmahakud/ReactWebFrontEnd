@@ -1,15 +1,19 @@
 .courseViewDashboard{
 border-width: 1px;
 background-color: white;
-border-radius: 5px;
+border-radius: var(--cardBorderRadius);
 margin-bottom: 0px;
-border-style: none;
+border-style: solid;
 border-color: var(--headerRightIconsColor);
-border-color: #e0ebff;
-box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+border-color: lightgrey;
+
+/*box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;*/
 }
 
+.courseViewDashboard:hover{
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
+}
 
 
 

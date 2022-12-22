@@ -39,11 +39,11 @@ useEffect(() =>{
 return (
 
 <div className={classes.contentDivUserProfile}>
-	
+  	
   <ProfileImageSec  userData={props.userData} rerender={props.rerender}/>
-
+  
   <ProfileUnitBlock data={data}  userDataUpdated={userDataUpdated}/>
-
+  
 </div>
 
 );

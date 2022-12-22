@@ -1,24 +1,23 @@
 import React,{useState,memo} from 'react';
 import classes from './TopToolBarV1.module.css';
-import {BsChevronDown} from 'react-icons/bs';
+import {BsChevronDown, BsChevronBarRight, BsChevronRight} from 'react-icons/bs';
 import {changeusertype} from '../../../../../CommonApps/AllAPICalls';
 import OutsideAlerter from "../../../../../CommonApps/OutsideAlerter";
-
+import {MdDoubleArrow} from 'react-icons/md';
 
 //import {Typography} from '@material-ui/core';
 
 const TopToolBarLeft=(props)=>{
 
-
+       const [showDropDown, setShowDropDown] = useState(false);
 
         const showUsertypeChangeHandler=()=>{
-
+           //console.log("clecked");
            setShowDropDown(showDropDown=>!showDropDown);
 
         }
 
-        const [showDropDown, setShowDropDown] = useState(false);
-
+        //console.log("showDropDown:",showDropDown);
 
         const changeUserTypeToStudentHandler=()=>{
 
@@ -44,7 +43,8 @@ return (
 
 	        <div className={classes.dashboardTitle}> 	              
 	              <div className={classes.topbarTitle}> 
-	                   Dashboard
+	                   <span>Dashboard</span>
+	                   <BsChevronRight className={classes.rightArrowToUserType}/>
 	              </div> 
 	        
                 

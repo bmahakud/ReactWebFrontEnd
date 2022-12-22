@@ -38,13 +38,13 @@ return (
 
 <div className={classes.mainAppContainer} style={{left:sideNavBarWidth, width:profileWidth}}>
    
-   {/*
-   <TopInfoBarUserProfile styles={styles} selectedCourse={props.selectedCourse}/>  
-   */}
-   <TopTitleBar title={title} userData={props.userData}/>		
-   <ContentDivUserProfile userData={props.userData} rerender={props.rerender}/>
-  
+    {/*
+    <TopInfoBarUserProfile styles={styles} selectedCourse={props.selectedCourse}/>  
+    */}
 
+    <TopTitleBar title={title} userData={props.userData}/>	   
+    <ContentDivUserProfile userData={props.userData} rerender={props.rerender}/>
+  
 </div>
 
 );

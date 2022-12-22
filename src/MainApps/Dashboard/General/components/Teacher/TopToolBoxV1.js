@@ -34,7 +34,10 @@ return (
     }
     <button className={classes.topToolBoxV1} 
 	  onClick={sectionHandler} 
-	  style={{backgroundColor: props.toolBoxStyle.backgroundColor}}
+	  style={{backgroundColor: props.toolBoxStyle.backgroundColor,
+			  borderColor:props.toolBoxStyle.borderColor,
+			  borderWidth:props.toolBoxStyle.borderWidth
+	         }}
 	  >
        <TheIcon className={classes.toolBoxIcon} 
 	        style={{ color:props.toolBoxStyle.iconColor,

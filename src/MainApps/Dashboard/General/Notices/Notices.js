@@ -22,7 +22,9 @@ return (
 
    <div className={classes.switchBar}>
 
-      <button className={classes.createNoticeButton} type="button" onClick={()=>setShowCreateNoticeForm(true)}> +Create a notice</button>
+      <button className={classes.createNoticeButton} type="button" onClick={()=>setShowCreateNoticeForm(true)}> 
+ 	<b>  +Create a notice </b>
+      </button>
 
       <span className={classes.noticeBoardMessage}> Notices from all your courses!</span>	
    </div>

@@ -1,6 +1,6 @@
 .UserHeadDiv{
 
- background-color: var(--themeColor);
+ background-color:var(--headerBkgColor);
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -30,7 +30,7 @@
     border-style: none ;
     border-color: var(--headerRightIconsColor);
     border-width:medium;
-    background-color: var(--themeColor); 
+    background-color: var(--headerBkgColor); 
     vertical-align: middle;
     cursor:pointer;
     margin-left: 40px;
@@ -39,6 +39,7 @@
     display: flex;
     justify-content: space-between;
     font-family: Roboto;
+    color: var(--deepDarkThemeTextColor);
     }
 
 .UserHeadButton:hover{
@@ -69,7 +70,7 @@
 
 font-style: normal;
 font-weight: 400;
-color: white;
+color: var(--deepDarkThemeTextColor);
 font-size:calc( 0.7 * var(--headerFontSize) );
 overflow: hidden;
 }
@@ -83,9 +84,9 @@ height: calc( 0.16 * var(--headerHeight) );
 top: 0px;
 right:  calc( -0.13 * var(--headerHeight) );
 font-size: calc( 0.23 * var(--headerHeight) );
-background-color: var(--themeColor);
+background-color: var(--headerBkgColor);
 border-radius: 50%;
-color: white;
+color: var(--deepDarkThemeTextColor);
 padding: calc( 0.05 * var(--headerHeight) );
 border-style: solid;
 border-width: calc( 0.04 * var(--headerHeight) );

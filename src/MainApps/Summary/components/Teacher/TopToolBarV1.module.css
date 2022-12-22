@@ -10,7 +10,6 @@ border-style: none;
 border-bottom-style: none;	
 border-bottom-color:grey;
 width: var(--topInnerBarWidth);
-background-color:white;
 border-width: 1px;
 margin: auto;
 border-style: none;
@@ -62,7 +61,7 @@ margin-right: 20px;
 
 
 .TitleBox1{
-font-size: 20px;
+font-size: var(--topBarLeftTitleFontSize);
 font-weight: bold;
 }
 

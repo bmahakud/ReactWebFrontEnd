@@ -66,7 +66,8 @@ return (
         */}
 
        <div className={classes.logoText}>
-	<SiRedux/> 
+	  <b>Di</b> 
+	  <div className={classes.styleBar}> </div>
        </div>
        
 

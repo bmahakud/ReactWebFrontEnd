@@ -50,8 +50,7 @@ return ()=>{
 
 
 
-
-
+ // console.log("propsselectedCourse[0]: ", props.selectedCourse[0].classes);
 
 
 
@@ -63,12 +62,23 @@ return (
 <div className={classes.coursesGridContainer}>
 
 	<Route  exact path='/course/classes' >
-	 {  
+
+
+
+	 { 
+
+
 	    props.selectedCourse !==null && props.selectedCourse.length > 0 && props.selectedCourse[0].classes.map((eclass,index)=>{
-               return <ClassViewShort key={index} Class={eclass}  userData={props.userData} rerender={props.rerender} />
+
+
+		    return  <ClassViewShort key={index} Class={eclass}  userData={props.userData} rerender={props.rerender} />
+
+
             }
+
            )
 	 }
+
        </Route>
 
          
@@ -104,10 +114,6 @@ return (
              />
 
         </Route>
-
-
-
-
 
 
 

@@ -35,6 +35,7 @@ width: 40%;
 border-style: none;
 border-color: red;
 border-width: 3px;
+display: flex;
 }
 
 
@@ -47,7 +48,7 @@ border-color: green;
 border-radius: 5px;
 border-style: none;
 display: flex;
-flex-direction: column;
+flex-direction: row;
 }
 
 
@@ -95,12 +96,21 @@ justify-content: space-between;
 
 
 .topbarTitle{
-font-size: calc( 0.4 * var(--headerHeight) );
+font-size: calc( 0.5 * var(--headerHeight) );
 color: var(--deepDarkThemeTextColor);
 font-weight: lighter;
+border-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
+.rightArrowToUserType{
 
+color: grey;
+margin-left: 10px;
+font-size: 15px;
+}
 
 
 
@@ -108,7 +118,13 @@ font-weight: lighter;
 .userTypeInfo{
 font-family: Roboto;
 border-style: none;
+display: flex;
+flex-direction: column;
+margin-left: 10px;
+justify-content: center;
+border-color: red;
 }
+
 
 
 
@@ -142,29 +158,42 @@ border-radius: 4px;
 
 .teacherButton{
 cursor: pointer;
-margin-top: calc( 0.2 * var(--headerHeight) );
+/*margin-top: calc( 0.2 * var(--headerHeight) );*/
 border-style: none;
 padding: calc( 0.1 * var(--headerHeight) );
-padding-left: calc( 0.3 * var(--headerHeight) );
+/*padding-left: calc( 0.3 * var(--headerHeight) );*/
 padding-right: calc( 0.3 * var(--headerHeight) );
-background-color: white;
-border-radius: 5px;
+border-radius: var(--cardBorderRadius);
 color: var(--deepDarkThemeTextColor);
-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+/*box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;*/
 font-size: calc( 0.3 * var(--headerHeight) );
-width: calc( 3 * var(--headerHeight) );
+/*width: calc( 2 * var(--headerHeight) );*/
+display: flex;
 align-items: center;
+background-color: var(--bodyBkgColor);
+color: var(--greyTextColor);
+
 }
+
+
+.teacherButton:hover{
+color: var(--themeColor);
+}
+
 
 .teacherTitle{
 float: left;
-
+border-style: none;
 }
 
 
 .downArrowSpan{
-margin-left: 3px;
+margin-left: 3px;	
 float: right;
+font-size: 12px;
+border-style: none;
+display: flex;
+align-items: center;
 }
 
 
@@ -189,12 +218,14 @@ font-size: calc( 0.3 * var(--headerHeight) );
 background-color: white;
 color: var(--deepDarkThemeTextColor);
 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-width: calc( 3 * var(--headerHeight) );
+width: calc( 2 * var(--headerHeight) );
+border-radius: calc( 0.5 * var(--cardBorderRadius) );
 }
 
 
 .studentButton:hover{
-background-color:#00aff0 ;
+background-color: var(--themeColor) ;
+color: white;
 }
 
 

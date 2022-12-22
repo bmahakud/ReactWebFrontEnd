@@ -4,7 +4,7 @@
 
 
 .styleDivHeader{
-height: calc( 0.5 * var(--headerTopMargin) );
+height: 0px;/*calc( 0.5 * var(--headerTopMargin) );*/
 width:96%;
 background-color: var(--headerRightIconsColor);
 margin-left: 2%;
@@ -19,7 +19,7 @@ border-radius:  var(--headerTopMargin)  var(--headerTopMargin) 0px 0px;
 
 .header{
 
-     background-color: var(--themeColor);
+     background-color: var(--headerBkgColor);
      height: var(--headerHeight);
      text-align: center;
      display: flex;
@@ -29,12 +29,15 @@ border-radius:  var(--headerTopMargin)  var(--headerTopMargin) 0px 0px;
      font-size: var(--headerFontSize);
      box-shadow:none;
      position: fixed;
-     width: 99%;
+     width: 100%;
      z-index:2;
-     border-radius: var(--headerTopMargin);
+     /*border-radius: var(--headerTopMargin);
      margin-left: 0.5%;
      margin-right: 0.5%;
-     top:  var(--headerTopMargin);
+     top:  var(--headerTopMargin);*/
+     border-style: none;
+     border-color: lightgrey;
+     border-width: 1px;
 }
 
 

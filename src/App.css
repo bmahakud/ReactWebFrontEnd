@@ -6,48 +6,51 @@
 html{
    
      /*Core color codes------global color codes #224C98 */
-     --themeColor:#224C98;/* #224C98;/*#263c63;/* #1b3d7a;*/
-     --darkThemeTextColor: #4c5b75;/*#546a8f;/* #334769;/*#283957;*/
-     --deepDarkThemeTextColor: #29303d;/*#132545;/*#0e1c36;*/
-     --deepDarkThemeTextColor2:#374a6b;
-     --darkThemeTextColor3:black;
-     --lightThemeColor1: #edf3fc;
-     --lightThemeColor2: #f2f4f7;/*#edf1f7;*/
-     --lightThemeColor3: #dae0eb;
-     --lightThemeColor4: #e9edf5;
+     --themeColor: #224C98;/* #224C98;/*#263c63;/* #1b3d7a;*/
+     --deepDarkThemeTextColor: #1b1e24;/*#29303d;/*#132545;/*#0e1c36;*/
+     --greyTextColor: #5e5d5d;
+     --cardBorderColor: #D3D3D3;
      --greenColor1: #65c394;
      --redColor1: #ff726f;
 
-     --tintGreyColor1: #7c8594;
+
+     
+     --lightThemeColor1: #edf3fc;
+     --lightThemeColor2: #f2f4f7;
+     --lightThemeColor3: #dae0eb;
+     --lightThemeColor4: #e9edf5;
+     --tintGreyColor1: #5e5d5d;
      --tintGreyColor2: #cbd0d6;
      --tintGreyColor3: #dee0e3;
      --tintGreyColor4: #f0f2f5;
      --lightGreyTintTextColor: var(--tintGreyColor1);
+     
 
      /*Header Colors*/
+     --headerBkgColor: white;
      --headerIconColor: #8496b5;/*#9fbaed;*/
-     --headerRightIconsColor: #9fbaed;/*#99add1;/* #9fbaed;*/
+     --headerRightIconsColor: var(--deepDarkThemeTextColor);/* #9fbaed;/*#99add1;/* #9fbaed;*/
      --headerIconColorOnhover: white;
-     --headerExpConBtnBkgColor: #1e458a;
+     --headerExpConBtnBkgColor: white;/*#1e458a;*/
 
      /*Side Nav Bar Colors*/
      --matchingTextColor1: #444655;/*use this color for all text in place of black*/
-     --sideNavBarBtnhoverColor: var(--lightThemeColor3);
+     --sideNavBarBtnhoverColor: lightgrey;/* var(--lightThemeColor3);*/
 
      --sideNavBarButtonTextColor: var(--deepDarkThemeTextColor);
      --sideNavBarIconColor: var(--deepDarkThemeTextColor);
 
-     --sideNavBarBkgColor: #f0f3fa;/*var(--lightThemeColor3);/* #505050;*/
+     --sideNavBarBkgColor: white;/*var(--lightThemeColor3);/* #505050;*/
 
-     --sideToolBarBkgColor: var(--lightThemeColor4);
+     --sideToolBarBkgColor: white;/*var(--lightThemeColor4);*/
      --sideToolBarBkgColor2: var(--sideNavBarBkgColor);
 
      /* Dashboard side nav Bar colors */
-     --sideNavBarDashBoardBkgColor: var(--lightThemeColor4);
-     --sideNavBarDashBoardBtnColor: var(--darkThemeTextColor);
+     --sideNavBarDashBoardBkgColor: var(--sideToolBarBkgColor);/* #f0f3fa;*/
+     --sideNavBarDashBoardBtnColor: var(--deepDarkThemeTextColor);/*var(--darkThemeTextColor);*/
      --sideNavBarDashBoardBtnBkgColor: #f0f3fa;/*#dae0eb;*/
-     --sideNavBarDashBoardOnClickBtnColor: var(--themeColor);
-     --sideNavBarDashBoardOnClickBtnBkgColor: white;
+     --sideNavBarDashBoardOnClickBtnColor: white;
+     --sideNavBarDashBoardOnClickBtnBkgColor: var(--themeColor);
 
 
 
@@ -58,8 +61,11 @@ html{
      --clickBtnColorDash:read;/* #ff5349;*/
      --clickBtnColorDashBackground: #ffd4d1;
 
+     /*body background color*/
+     --bodyBkgColor: #f2f2f2;
+
      /*height, width, size settings*/
-     --headerHeight: max( 2.5rem, calc( 0.065 * 100vh ) );
+     --headerHeight:3rem;/* max( 2.5rem, calc( 0.065 * 100vh ) );*/
      --headerFontSize: calc( 0.35 * var(--headerHeight) );
      --headerLogoWidth: calc( 0.80 * var(--headerHeight));
      --headerLogoWidth: calc( 0.80 * var(--headerHeight)); 
@@ -84,36 +90,43 @@ html{
       /*Top tool bar common style parameters inside the course */
 
       --topRightButtonWidth_Course: 6vw;
-      --topRightButtonBkgColorInActive_Course: var(--tintGreyColor4);
+      --topRightButtonBkgColorInActive_Course: white;
       --topRightButtonTextColorInActive_Course: var(--deepDarkThemeTextColor);
       --topRightButtonBkgColorActive_Course:lightgrey;
       --topRightButtonTextColorActive_Course:var(--themeColor);
       --topRightButtonIconColorInActive:grey;
       --topRightButtonIconColorActive:var(--themeColor);
-      --topRightButtonUnderlineColorActive: orange;
-      --topRightButtonUnderlineColorInActive:white;
+      --topRightButtonUnderlineColorActive: var(--greyTextColor);
+      --topRightButtonUnderlineColorInActive: var(--bodyBkgColor);
       --topRightButtonTextFontSize_Course: calc(  1vw );/*calc( 0.25 * var(--headerHeight) );*/
       --topRightButtonIconFontSize_Course: calc( 1vw );/*calc( 0.30 * var(--headerHeight) );*/
       --topInnerBarWidth:90%;
+      --topBarLeftTitleFontSize: calc( 0.4 * var(--headerHeight) );
 
       /*Top bar common style parameters in the dashboard/home*/
-      --toolButtonDashBkgColorInActive: var(--lightThemeColor2);
-      --toolButtonDashIconColorInActive: var(--darkThemeTextColor);
-      --toolButtonDashTextColorInActive: var(--darkThemeTextColor);
+      --toolButtonDashBkgColorInActive: white;/*var(--lightThemeColor2);*/
+      --toolButtonDashIconColorInActive: var(--deepDarkThemeTextColor);
+      --toolButtonDashTextColorInActive: var(--deepDarkThemeTextColor);
+      --toolButtonDashBorderColorInActive:lightgrey; 
       --toolButtonDashBoxShadowInActive:rgba(0, 0, 0, 0) 0px 0px 0px;
 
       --toolButtonDashBkgColorActive: white;
-      --toolButtonDashIconColorActive: var(--themeColor);
-      --toolButtonDashTextColorActive: var(--themeColor);
+      --toolButtonDashIconColorActive: var(--deepDarkThemeTextColor);
+      --toolButtonDashTextColorActive: var(--deepDarkThemeTextColor);
+      --toolButtonDashBorderColorActive:grey; 
       --toolButtonDashBoxShadowActive:rgba(0, 0, 0, 0.16) 0px 1px 4px;
       --topRightButtonWidth_home: var(--topRightButtonWidth_Course);
       --topRightButtonTextFontSize_home: var(--topRightButtonTextFontSize_Course);
       --topRightButtonIconFontSize_home: var(--topRightButtonIconFontSize_Course);
-      --toolButtonDashUnderlineColorInActive: var(--lightThemeColor2);
-      --toolButtonDashUnderlineColorActive: orange;
+      --toolButtonDashUnderlineColorInActive: var(--bodyBkgColor);/*var(--lightThemeColor2);*/
+      --toolButtonDashUnderlineColorActive: var(--greyTextColor);
 
       --standardBoxShadow1: rgba(0, 0, 0, 0) 0px 0px 0px;
       --standardBoxShadow2: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+      /*Card specifications*/
+      --cardBorderRadius:calc( 0.2 * var(--headerHeight) );
+
 
 }
 

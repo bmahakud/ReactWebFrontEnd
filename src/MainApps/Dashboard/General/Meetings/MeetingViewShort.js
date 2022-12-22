@@ -31,7 +31,7 @@ const MeetingViewShort = (props)=>{
 	  boxShadow: 'grey 0px 3px 8px',
 	  fieldColor: 'grey',
 	  fieldValueColor:'grey', 
-	  borderColor:'#e0ebff'
+	  borderColor:'lightgrey'
 
     });
     //let deepColor='#5177bd';
@@ -138,7 +138,7 @@ const MeetingViewShort = (props)=>{
 		    boxShadow: `grey 0px 3px 8px`,
 		    fieldColor: deepColor,
 		    fieldValueColor:deepColor,
-		    borderColor:'var(--headerRightIconsColor)'
+		    borderColor:'lightgrey'
 
 	    }));
       };

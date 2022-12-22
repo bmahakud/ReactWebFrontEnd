@@ -25,7 +25,9 @@ const TopToolBar =(props)=>{
                iconTitleColor:"var(--toolButtonDashTextColorActive)",
                backgroundColor:"var(--toolButtonDashBkgColorActive)",
                boxShadow: "var(--toolButtonDashBoxShadowActive)",
-	       fontWeight:"bold"
+	       fontWeight:"bold",
+	       borderWidth:"1px",
+	       borderColor:"lightgrey"
     }
 
     let InActiveButtonStyle = {
@@ -34,7 +36,9 @@ const TopToolBar =(props)=>{
                iconTitleColor:"var(--toolButtonDashTextColorInActive)",
                backgroundColor:"var(--toolButtonDashBkgColorInActive)",
                boxShadow: "var(--toolButtonDashBoxShadowInActive)",
-	       fontWeight: "normal"
+	       fontWeight: "normal",
+	       borderWidth:"1px",
+	       borderColor:"lightgrey"
     }
 
 
