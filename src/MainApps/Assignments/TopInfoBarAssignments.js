@@ -1,12 +1,11 @@
 import React from "react";
-import classes from '../CommonAppUtilities/TopInfoBar.module.css';
-import TopInfoBarInstructor from '../CommonAppUtilities/TopInfoBarInstructor';
+import classes from "../CommonAppUtilities/TopInfoBar.module.css";
+import TopInfoBarInstructor from "../CommonAppUtilities/TopInfoBarInstructor";
 //import TopInfoBarButton from '../../CommonAppUtilities/TopInfoBarButton.js';
 //import { useHistory } from 'react-router-dom';
 
-
-const  TopInfoBarFindBook =(props) =>  {
-   /*
+const TopInfoBarFindBook = (props) => {
+  /*
    let history = useHistory();
 
    const moveToRead=()=>{
@@ -18,33 +17,18 @@ const  TopInfoBarFindBook =(props) =>  {
    }
   */
 
-
-
-
-
-
-
-
-
   return (
-
-  <div className={classes.topInfoBar}>
-
-       <TopInfoBarInstructor selectedCourse={props.selectedCourse}/>
-       {/*      
+    <div className={classes.topInfoBar}>
+      <TopInfoBarInstructor selectedCourse={props.selectedCourse} />
+      {/*      
        <TopInfoBarButton  styles={props.styles}  buttonName={'FindBook'}/>
 
        <TopInfoBarButton  onPress={moveToRead} buttonName={'Read'}/>
 
        <TopInfoBarButton onPress={moveToInsights}   buttonName={'Insights'}/>
-       */}	  
-
-
-
-
-  </div>
-
-);	
-}
+       */}
+    </div>
+  );
+};
 
 export default TopInfoBarFindBook;
