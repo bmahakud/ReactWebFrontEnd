@@ -1,65 +1,23 @@
-import classes from './All.module.css';
-import React,{useState} from 'react';
-import axios from 'axios';
+import classes3 from './All.module.css';
+import AssignmentBox from './AssignmentBox';
 
-function All(){
- 
-   
-    const initialFormData = Object.freeze({
+function All(props){
+  console.log('hello',props.assignmentdata);
+    return(
+      <div className={classes3.alldiv}>
+     
+     { 
+        props.assignmentdata !==null && 
+        props.assignmentdata.map((oneAssignment, index)=>{
 
-        name: "",
-        description: "",
-
-        });
-
-    const [formData, setFormData] = useState(initialFormData);	
-
-
-    const onChangeHandler=(e)=>{
-
-      console.log("---userinput--", e.target.value)	    
-
-      setFormData({
-                        ...formData,
-                        [e.target.name]: e.target.value.trim(),
-                });
+          return <AssignmentBox key={index} oneAssignment={oneAssignment}/>
+          
+          })
+          
+      }
 
 
-
-    }
-
-  console.log("formData--- ", formData);
-
-
-
-   const submitFormData=()=>{
-
-
-   axios
-      .put("https://webapp.diracai.com/api/assignment/create/3/", {
-        title: "Hello World!",
-        description: "This is a new post."
-      })
-     .then((response) => {
-        console.log("---", response.data);
-      });
-
-
-
-
-   }
-
-
-  return(
-      <div className={classes.alldiv}>
-
-
-       <input name="name" onChange={onChangeHandler}/>
-       <input name="description" onChange={onChangeHandler}/> 
-
-       <button type="button" onClick={submitFormData}> Submit </button>
-
-     </div>
+      </div>
     );
 };
 export default All;

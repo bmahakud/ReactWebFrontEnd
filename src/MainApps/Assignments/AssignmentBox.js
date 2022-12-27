@@ -1,80 +1,75 @@
-import classes from './Pending.module.css';
-// import classes2 from './Completed.module.css';
-import {RiFileEditFill} from 'react-icons/ri';
-import {RiDeleteBin6Fill} from 'react-icons/ri';
-import {FaAngleDoubleRight} from 'react-icons/fa';
-import {FaHandPointRight} from 'react-icons/fa';
+import classes from "./Pending.module.css";
+import classes2 from "./Completed.module.css";
+import classes3 from "./All.module.css";
+import { HiDotsVertical } from "react-icons/hi";
+import { GrScorecard } from "react-icons/gr";
+import { MdDoubleArrow } from "react-icons/md";
 
+const AssignmentBoxPending = (props) => {
+  return (
+    <div className={classes.assignmentBox}>
+      <div className={classes.headSectionDiv}>
+        <div>
+          <span className={classes.courseId}>{props.oneAssignment.id}</span>
+          <span className={classes.assignmentTitle}>
+            <span>{props.oneAssignment.title}</span>
+          </span>
+        </div>
+        <div>
+          <span className={classes.status}>
+            {props.oneAssignment.status_}Ongoing
+          </span>
+          <span className={classes.threeDots}>
+            <HiDotsVertical />
+          </span>
+        </div>
+      </div>
 
-const AssignmentBoxPending=(props)=>{
-    return (
-        
-        <div className={classes.assignmentBox}>
-         <div className={classes.box1}>
-          <div className={classes.assignment}>
-           <strong><FaHandPointRight/> <u>{props.oneAssignment.title}</u></strong>
-           <p><strong>Start Date :</strong> {props.oneAssignment.startData}
-           </p>
-           <p>  <strong>Due Date:</strong> {props.oneAssignment.endDate}</p>
-           
-           </div>
-           <div className={classes.totalCredit}><strong>Total Credit:</strong> {props.oneAssignment.totalCredit}</div>
-           <div className={classes.icons}>
-           
-            <span className={classes.courseid}>{props.oneAssignment.Id}</span>
-        <span><RiFileEditFill style={{marginLeft: '10px'}}/></span>
-        <span><RiDeleteBin6Fill style={{marginLeft: '10px'}}/></span>
-        <div><FaAngleDoubleRight style={{fontSize:'25px', marginTop: '25px', marginLeft:'90px'}}/></div>
-           </div>
-         
-         </div>
-         
-         <div className={classes.box2}>
-          <div><strong>Assign by:</strong> {props.oneAssignment.creater}</div>
-          <div><strong>Progress</strong> <progress value="10" max="100"> {props.oneAssignment.progress} </progress></div>
-          <div><strong>Status:</strong> <span>{props.oneAssignment.status_}</span></div>
-          </div> 
-         
-         </div>
-      
-     
-    )
-};
-
-export const AssignmentBoxCompleted=(props)=>{
-    return (
-        
-        <div className={classes.assignmentBox}>
-         <div className={classes.box1}>
-          <div className={classes.assignment}>
-           <strong><FaHandPointRight/> <u>{props.oneAssignment.title}</u></strong>
-           <p><strong>Start Date :</strong> {props.oneAssignment.startData}
-           </p>
-           <p>  <strong>Due Date:</strong> {props.oneAssignment.endDate}</p>
-           
-           </div>
-           <div className={classes.totalCredit}><strong>Total Credit:</strong> {props.oneAssignment.totalCredit}</div>
-           <div className={classes.scored}>Mark Obtained : {props.oneAssignment.scored}</div>
-           <div className={classes.icons}>
-           
-            <span className={classes.courseid}>{props.oneAssignment.Id}</span>
-        <span><RiFileEditFill style={{marginLeft: '10px'}}/></span>
-        <span><RiDeleteBin6Fill style={{marginLeft: '10px'}}/></span>
-        <div><FaAngleDoubleRight style={{fontSize:'25px', marginTop: '25px', marginLeft:'90px'}}/></div>
-           </div>
-         
-         </div>
-         
-         <div className={classes.box2}>
-          <div><strong>Assign by:</strong> {props.oneAssignment.creater}</div>
-          <div><strong>Progress</strong> <progress value="100" max="100"> {props.oneAssignment.progress} </progress></div>
-          <div><strong>Status:</strong> <span>{props.oneAssignment.status_}</span></div>
-          </div> 
-         
-         </div>
-      
-     
-    )
+      <div className={classes.secondSection}>
+        <div className={classes.leftLowerDiv}>
+          <div className={classes.AssignBy}>
+            by:
+            <span style={{ fontSize: "14px", color: "#1b1e24" }}>
+              {/* {props.oneAssignment.creater}  */} Durga Shankar Das Mangaraj
+            </span>
+            <div className={classes.dateInfo}>
+              <div className={classes.startDate}>
+                <span>
+                  Start Date:
+                  <span className={classes.infoDate}>
+                    &nbsp;{props.oneAssignment.publishDate}
+                  </span>
+                </span>
+              </div>
+              <div className={classes.dueDate}>
+                Due Date:
+                <span className={classes.infoDate}>
+                  &nbsp;{props.oneAssignment.dueDate}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={classes.rightLowerDiv}>
+          {/* <button type="button" className={classes.uploadButton}>
+            <b>Upload</b>
+          </button> */}
+          <button type="button" className={classes.viewAssignmentButton}>
+            <span style={{ paddingLeft: "10%" }}>View Detail</span>
+            <MdDoubleArrow className={classes.viewdetailIcon} />
+          </button>
+        </div>
+      </div>
+      <div className={classes.thirdLeftDiv}>
+        <span>
+          <GrScorecard style={{ fontSize: "12px" }} /> Total Credit:
+        </span>
+        <span className={classes.tubeIconText}>
+          &nbsp;{props.oneAssignment.credit}
+        </span>
+      </div>
+    </div>
+  );
 };
 
 export default AssignmentBoxPending;

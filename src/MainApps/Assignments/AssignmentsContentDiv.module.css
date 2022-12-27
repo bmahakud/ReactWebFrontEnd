@@ -1,17 +1,11 @@
-
-.contentDiv{
-position: relative;
-background-color: var(--mainAppContainerBkgColor);
-background-color:var(--bodyBkgColor);
-border-style:none;
-border-width: 1px;
-border-color: lightgrey;
-width: 100% ;
-height: calc( 100vh - calc( 1  * var(--headerHeight) ) );
-border-radius: 0px 0px 0px 0px;
-overflow-y: auto;
-overflow-x: hidden;
-/*margin-top: calc( 0.4 * var(--headerHeight) );*/
+.contentDiv {
+  position: relative;
+  border-style: none;
+  border-width: 5px;
+  border-color: lightgrey;
+  width: 100%;
+  height: calc(100vh - calc(1 * var(--headerHeight)));
+  border-radius: 0px 0px 0px 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
-
-
