@@ -2,7 +2,7 @@ let basewebURL;
 let meetingbasewebURL;
 
 if (window.location.host === "localhost:3000") {
-  basewebURL = "https://webapp.diracai.com";
+  basewebURL = "http://127.0.0.1:8000";
   meetingbasewebURL = "http://localhost:3000";
 }
 

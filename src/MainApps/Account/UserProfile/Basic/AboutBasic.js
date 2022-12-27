@@ -49,7 +49,7 @@ const AboutBasic=(props)=>{
 
 
 
-//console.log("props.data.educationDegrees: ", props.data.educationDegrees.length);
+ console.log("props.data.educationDegrees: ", props.data.educationDegrees);
 
 
 
@@ -58,7 +58,8 @@ return (
 
 <div className={classes.about_Basic}>	
 
-	
+   	
+    	
 
     <UnitBar/>
     <UnitAboutIcon  userDataUpdated={props.userDataUpdated}/>
@@ -106,17 +107,8 @@ return (
 
 
 
-	{/*
-        <UnitBarFirstName data={props.data} />
-
-        <UnitBarLastName data={props.data} />
-
-        <UnitBarRole data={props.data} />
-
-        <UnitBarGenDOB data={props.data} />	
-
-        <UnitBarPosiEmail data={props.data} />	
-	*/}
+	
+	
 
 
     </div>
@@ -137,18 +129,15 @@ return (
                     props.data.educationDegrees.map((degree, index)=>{
 
                     return  <UnitBarInstDegree  key={index}
-                                 ddd={degree}
-                                 degree={degree.degreename.name}
-                                 institute={degree.institute.name}
+                                 degree={ degree.degreename !=null ? degree.degreename.name:"N/A"}
+                                 institute={ degree.institute !=null? degree.institute.name:"N/A"}
                                  duration={degree.startDate+" - "+degree.endDate}
-                                 place={degree.institute.city+", "+degree.institute.country}
-                                 logo={degree.institute.instlogo}
+                                 place={ degree.institute !=null ? degree.institute.city+", "+degree.institute.country:"N/A"}
+                                 logo={ degree.institute !=null ? degree.institute.instlogo: "N/A"}
                                  />
 
 
                     })
-
-
 
                   }
 
@@ -195,6 +184,11 @@ return (
      </div>	  
 
    </div>
+
+
+   
+
+
 
 
 </div>	

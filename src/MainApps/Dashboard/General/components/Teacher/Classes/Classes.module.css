@@ -4,8 +4,22 @@
 
 
 width: 100%;
-font-size: 40px;
 margin: auto;
-margin-top:200px;
-margin-left:200px;
+margin-top: 20px;
+border-style: none;
+height: 1000px;
 }
+
+
+.switchBar{
+height: calc( 0.7 * var(--headerHeight) );
+width:90%;
+margin: auto;
+border-color: lightgrey;
+border-style: none;
+
+}
+
+
+
+

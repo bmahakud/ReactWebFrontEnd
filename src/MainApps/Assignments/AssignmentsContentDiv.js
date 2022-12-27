@@ -26,7 +26,7 @@ const AssignmentsContentDiv = (props) => {
   const [validForm, setValidForm] = useState(null);
 
   useEffect(() => {
-    let courseID = 3;
+    let courseID = 120;
     getassignment({ courseID, setData });
   }, [setData]);
 

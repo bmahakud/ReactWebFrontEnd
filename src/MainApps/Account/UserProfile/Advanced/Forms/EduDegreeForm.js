@@ -2,8 +2,17 @@ import React,{useState, useEffect} from "react";
 import classes from "./EduDegreeForm.module.css";
 import {AiFillCloseCircle} from "react-icons/ai";
 import logoImage from '../../../../../CommonApps/BWlogo.JPG'
-import {OptionField,OptionFieldSubmitValue,OptionFieldSecondaryObjs, ParagraphField,TextInput, DateField} from './FormInputObjects';
+import {OptionFieldSubmitValue,OptionFieldSecondaryObjs, ParagraphField,TextInput} from './FormInputObjects';
 import {getdegreenames, getinstitutenames, getuser, createedudegree} from '../../../../../CommonApps/AllAPICalls.js';
+import {institutesearchgeneral} from '../../../../../CommonApps/AllAPICalls.js';
+import {OptionField, DateField, SearchAndInsert} from '../../../../../CommonApps/FormInputObjects';
+
+import Logo from '../../../../../CommonApps/Logo';
+
+
+
+
+
 //import FadeLoader from "react-spinners/FadeLoader";
 //import { css } from "@emotion/react";
 
@@ -35,6 +44,12 @@ const CreateCourseForm=(props)=>{
    const [formSubmitted,setFormSubmitted] = useState(false);
 
 
+   const [searchedInstitutes, getSearchedInstitutes] = useState(null)
+   const [searchInstString, setSearchInstString] =  useState("Inst")
+   const [pageNo , setPageNo] = useState(1);
+
+
+
    useEffect(() =>{
      getdegreenames({getDegreeNames});
    },[])
@@ -46,9 +61,19 @@ const CreateCourseForm=(props)=>{
 
 
    useEffect(()=>{
+      institutesearchgeneral({pageNo,searchInstString, getSearchedInstitutes});
+   },[searchInstString]);
+
+
+
+
+   useEffect(()=>{
      getuser({setData});
    },[]);
 
+
+
+    console.log("searchedInstitutes: ", searchedInstitutes);
 
 
 
@@ -57,7 +82,8 @@ const initialFormData = Object.freeze({
         institute: null,
         degreename: null,
         startDate: null,
-        endDate: null
+        endDate: null,
+	displayName:""
 
         });
 
@@ -70,7 +96,7 @@ const handleChange1 = (e) => {
 	//setClassId(classId=>e.target.value);
         updateFormData({
                         ...formData,
-                        [e.target.name]: e.target.value.trim(),
+                        [e.target.name]: e.target.value.trim()
                 });
         };
 
@@ -130,9 +156,26 @@ const handleSubmit = (e) => {
 	
 	};
 
+ 
+      const handleChange=(e)=>{
+
+  
+         console.log("name---: ", e.target.name);
+         updateFormData({
+                        ...formData,
+                        [e.target.name]: e.target.value.trim(),[e.target.displayName]: e.target.value.trim()
+                });
+
+         setSearchInstString(searchInstString=>e.target.value.trim())
+
+      }	
 
 
 
+
+	console.log("formData: ", formData);
+
+        console.log("searchInstString: ", searchInstString);
 
 
 
@@ -162,21 +205,81 @@ return(
  
        {/*logo and field title container below*/}
        <div className={classes.logoAndTitleContainer}>
-	  <img  className={classes.bwLogo} src={logoImage} alt='edr Logo' />
+           <Logo/>
            <div className={classes.formTitleDiv}><i>  Add a degree </i></div>
        </div>
 
 
 
-       <OptionField handleChange={handleChange1}  label="Choose a degree" name="degreename"  options={degreeNames}/>
+       <OptionField handleChange={handleChange1}  label="Degree" name="degreename"  options={degreeNames}/>
 
-       <OptionField handleChange={handleChange1}  label="Choose a degree" name="institute"  options={instituteNames}/>
+       {/*		   
+       <OptionField handleChange={handleChange1}  label="Institute" name="institute"  options={instituteNames}/>
+        */}
 
-      
-       <DateField handleChange={handleChange1} label="Start date" name="startDate" placeholder="Enter degree start date"   />
 
-       <DateField handleChange={handleChange1} label="End date" name="endDate" placeholder="Enter degree end date"   />
 
+
+       <SearchAndInsert handleChange={handleChange} 
+	                label="Institute" 
+	                name="institute"
+	                displayname="displayName"
+	                searchedObjects={searchedInstitutes}
+	                formData={formData}
+	                updateFormData={updateFormData}
+		        />
+
+
+
+        {/*
+        <input
+              type="text"
+              onChange={handleChange}
+              name="institute"
+              className={classes.input_field}
+              placeholder="-"
+              defaultValue="iit"
+            />
+         */}
+
+         {/*
+         <select name="institute"  onChange={handleChange}  mode="multiple">
+
+          <option value="categoryDefault" disabled>
+            "hello"
+          </option>
+
+          { instituteNames.map((option,index)=>{
+
+                return <option key={index} value={option.id}> {option.name}  </option>
+
+                }
+
+          )}
+
+        </select>
+        */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <div className={classes.dateFields}>      
+         <DateField handleChange={handleChange1} label="Start date" name="startDate" placeholder="Enter degree start date"   />
+         <div style={{width: "70px"}}> </div>
+         <DateField handleChange={handleChange1} label="End date" name="endDate" placeholder="Enter degree end date"   />
+       </div>
 
 
 

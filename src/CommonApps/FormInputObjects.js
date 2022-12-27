@@ -28,6 +28,80 @@ return <div className={classes.name_div}>
 
 
 
+export const SearchAndInsert = (props)=>{
+
+
+    const [showDropDown, setShowDropDown] = useState(false);
+
+    const selectInstituteHandler=(instituteId,instName)=>{
+
+      console.log("instituteId: lll", instituteId);
+      //props.handleChange();
+      props.updateFormData({...props.formData,['institute']:instituteId, ['displayName']:instName});
+      setShowDropDown(false);
+
+
+    }
+
+
+
+
+return  <div className={classes.name_div}>
+
+	<div className={classes.name_txt}>
+                {props.requirement==="*" && <span style={{color:"red"}}> * </span>}
+                {props.label}
+          </div>
+          <div className={classes.name_inputDiv} >
+            <input
+              type="text"
+              onChange={props.handleChange}
+              name={props.name}
+	      displayName={props.displayname}
+              className={classes.input_field_searchnInsert}
+              placeholder={props.placeholder}
+	      onFocus={()=>setShowDropDown(true)}
+	      value={props.formData['displayName']}
+	      autoComplete="off"
+            />
+          </div>
+	
+
+         { showDropDown &&  
+         <div className={classes.searchDropDown} >
+
+	    {     props.searchedObjects !=null && props.searchedObjects.results !=null && props.searchedObjects.results.map((oneResult, index)=>{
+
+           
+		    let instituteId= oneResult.id;
+		    let instName=oneResult.name;
+                   return <button key={index} 
+		                  type="button" 
+		                  className={classes.oneSearchOptionButton} 
+		                  onClick={()=>selectInstituteHandler(instituteId,instName)} 
+			          > 
+			          {oneResult.name}   
+			  </button>
+
+
+	        })
+
+            }
+
+
+         </div>
+
+         }		 
+
+        </div>
+
+}
+
+
+
+
+
+
 
 
 export const OptionField = (props)=>{
@@ -203,6 +277,20 @@ return(
 
 }
 
+
+
+export const SearchAndPutField =()=>{
+
+return (
+
+   <div className={classes.name_div}>
+
+
+
+   </div>
+);	
+
+}
 
 
 

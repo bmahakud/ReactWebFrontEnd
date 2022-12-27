@@ -1,0 +1,11 @@
+
+
+.parentContainer{
+
+width: 90%;
+border-style: solid;
+margin: auto;
+height: 1000px;
+margin-top: calc( 0.5 * var(--headerHeight) );
+}
+

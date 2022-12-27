@@ -264,19 +264,19 @@ return (
 
    
     <div className={classes.infoUnitBarParent}  onClick={moveToSubject} style={{backgroundColor: style.boxBkgColor}}>
-       <div className={classes.infoUnitBar} style={{borderColor:style.topBarBottomColor,backgroundColor: style.boxBkgColor}}>
+       <div className={classes.infoUnitBar} style={{backgroundColor: style.boxBkgColor}}>
 
         <div className={classes.subjectSection}> 
-	   <span className={classes.serialNo}> {props.Meeting.id} </span>
+	   <span className={classes.serialNo}> <b>{"# "+props.Meeting.id+"."}</b> </span>
 	   <span className={classes.subjectTitle} style={{color: style.subjectColor}}>  </span>
-	   <span className={classes.subjectName} style={{color: style.rightButtonColor}}>  {props.Meeting.name}</span>   
+	   <span className={classes.subjectName} style={{color: "var(--deepDarkThemeTextColor)"}}>  {props.Meeting.name}</span>   
 	   {/*<span className={classes.signupIcon}> <BsFillCheckSquareFill/> </span>*/}
 
 	</div>          
 
 
 	<i className={classes.codeSection} style={{color: style.codeColor}}>
-	  STATUS: <span className={classes.courseCode}>
+	          <span className={classes.courseCode}>
 	          { props.Meeting.meetingStatus === "scheduled" &&
 	          <b style={{color:"green"}}>
 	              {props.Meeting.meetingStatus}
@@ -415,20 +415,18 @@ return (
 
 
 
-
+   {/*
    <div className={classes.genInfoBar} style={{color: style.fieldColor , backgroundColor:style.boxBkgColor}} onClick={moveToSubject}>
       <div className={classes.upcomingClass}  style={{backgroundColor:style.boxBkgColor}}>
         <i className={classes.chapterTopic}> 
 	   <b>About: </b>  <span className={classes.topicText}> 
+                     {props.Meeting.about} 
 
-	        { /*props.Class.chapter !==null? props.Class.chapter.name:"N/A"*/}  {props.Meeting.about}  
 	    </span> 
 	</i>
       </div>
-
-
    </div>	
-
+   */}
 
 
    <div className={classes.genInfoBar} style={{color: style.fieldColor, backgroundColor:style.boxBkgColor}}>

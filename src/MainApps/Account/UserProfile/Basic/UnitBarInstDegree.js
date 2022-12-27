@@ -23,7 +23,7 @@ return (
    <div className={classes.InstInfo}> 
 
       <div className={classes.InstInfo__degree}>
-	<b>{props.degree}</b>
+	<b>{/*props.degree*/}</b>
       </div>
 
       <div className={classes.InstInfo__instName}>

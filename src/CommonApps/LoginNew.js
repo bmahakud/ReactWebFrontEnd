@@ -11,7 +11,7 @@ import {changepassword} from './AllAPICalls';
 import FadeLoader from "react-spinners/FadeLoader";
 import OTPinputUnit from './OTPinputUnit';
 
-
+import Logo from './Logo';
 
 const override: CSSProperties = {
   display: "block",
@@ -265,7 +265,7 @@ return (
      <div className={classes.registerDiv}>
 
 
-      <div className={classes.titleDiv}> <h2> Login </h2> </div> 
+      <div className={classes.titleDiv}> <Logo/> <h2 style={{marginLeft:"10px"}}> Login </h2> </div> 
 
 
 
@@ -336,7 +336,7 @@ return (
 
        <div className={classes.registerDiv}>		    
 
-       <div className={classes.titleDiv}> <h2> Login </h2> </div>
+       <div className={classes.titleDiv}> <Logo/>  <h2 style={{marginLeft:"10px"}}> Login </h2> </div>
 
 
  

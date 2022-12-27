@@ -11,7 +11,7 @@ import Login from './LoginNew';
 import basewebURL from '../basewebURL';
 import ReCAPTCHA from 'react-google-recaptcha';
 import axios from 'axios';
-
+import Logo from './Logo';
 
 const override: CSSProperties = {
   display: "block",
@@ -165,7 +165,8 @@ const Register=()=>{
 return (
 
 <div className={classes.registerParent}>
- 
+
+
   { !login &&  
   <LoginHeader/>
   }
@@ -216,7 +217,7 @@ return (
   <div className={classes.registerDiv}>
 
 
-    <div className={classes.titleDiv}> <h2>Create an account</h2> </div>
+    <div className={classes.titleDiv}> <h2 >Create an account</h2> </div>
 
     <div className={classes.switchMethodDiv}>  </div>
 
